@@ -1,0 +1,86 @@
+// Styles des produits affichés sur la page accueil
+.Container {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	padding-top: 50px;
+	.card {
+        background-color: rgb(238, 198, 241);
+        box-shadow: 1px 1px 15px #555;
+        border-radius: 30px;
+        margin: 28px;
+        align-items: center;
+        width: 450px;
+        text-align: center;
+		padding: 30px;
+		overflow: hidden;
+		position: relative;
+		height: 500px;
+		.peluche {
+			width: 420px;
+			border-radius: 30px;
+			height: 210px;
+			box-shadow: 1px 1px 15px #555;
+			margin-top: 15px;
+		}
+		.description {
+			display: flex;
+			justify-content: space-between;
+			height: 50px;
+			align-items: center;
+		}
+		.descriptionPeluche{
+			font-family: 'labster';
+			padding-top: 80px;
+			font-family: 'lobster', cursive;
+            font-size: 1.2em;
+            color: brown;
+		
+
+		}
+		h2{
+			position: absolute;
+            top:0;
+            left: 180px;
+			font-family: 'labster', cursive;
+			font-size: 2em;
+			color: brown;
+		}
+		.link {
+			position: absolute;
+			width: 93.6%;
+			font-weight: bold;
+			transition: all 0.3s ease-in-out;
+			opacity: 0;
+			cursor: pointer;
+			text-align: center;
+		}
+		a {
+            font-size: 1.3em;
+            position: absolute;
+            bottom: 30px;
+            border-style: dashed solid;
+            padding: 5px;
+            color: aliceblue;
+		}
+		.prix{
+			position: absolute;
+            bottom: 70px;
+            left: 200px;
+			font-size: 1.3em;
+		}
+		p{
+			font-family: 'labster', cursive;
+			color: brown;
+		}
+		.duration-200 {
+			transition-duration: 200ms;
+		}
+		.transition {
+			transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+			}
+	}
+}
+

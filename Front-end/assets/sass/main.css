@@ -1,0 +1,245 @@
+@charset "UTF-8";
+/* Définition des couleurs */
+/* Définition effet apparition */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+body {
+  margin: auto;
+  padding: 0;
+  background: #e8e8e8;
+}
+
+.ourson {
+  width: 1000px;
+  height: 350px;
+  display: block;
+  margin: auto;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: .5rem 1rem;
+  background-color: #f3e9f1;
+}
+
+a {
+  color: #42082a;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+a:hover {
+  color: #150116;
+}
+
+#titleText {
+  width: 100%;
+  position: absolute;
+  top: 225px;
+  left: 0px;
+  text-shadow: 3px 3px #42082a;
+  text-align: center;
+  font-family: 'lobster', cursive;
+  font-size: 3.5em;
+  color: brown;
+}
+
+.Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.Container .card {
+  background-color: #eec6f1;
+  -webkit-box-shadow: 1px 1px 15px #555;
+          box-shadow: 1px 1px 15px #555;
+  border-radius: 30px;
+  margin: 28px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 450px;
+  text-align: center;
+  padding: 30px;
+  overflow: hidden;
+  position: relative;
+  height: 500px;
+}
+
+.Container .card .peluche {
+  width: 420px;
+  border-radius: 30px;
+  height: 210px;
+  -webkit-box-shadow: 1px 1px 15px #555;
+          box-shadow: 1px 1px 15px #555;
+  margin-top: 15px;
+}
+
+.Container .card .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .card .descriptionPeluche {
+  font-family: 'labster';
+  padding-top: 80px;
+  font-family: 'lobster', cursive;
+  font-size: 1.2em;
+  color: brown;
+}
+
+.Container .card h2 {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  font-family: 'labster', cursive;
+  font-size: 2em;
+  color: brown;
+}
+
+.Container .card .link {
+  position: absolute;
+  width: 93.6%;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.Container .card a {
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 30px;
+  border-style: dashed solid;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.Container .card .prix {
+  position: absolute;
+  bottom: 70px;
+  left: 200px;
+  font-size: 1.3em;
+}
+
+.Container .card p {
+  font-family: 'labster', cursive;
+  color: brown;
+}
+
+.Container .card .duration-200 {
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.Container .card .transition {
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ******************** Style des boutons généraux ******************** */
+.btn {
+  height: 48px;
+  width: 160px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btnDecreaseIncrease {
+  cursor: pointer;
+}
+
+.btnAnim:hover {
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.btnAnim:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+/* *************** Panier ******************** */
+.buttonBuy {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.buttonBuy #buttonContinueAchat {
+  margin-right: 5px;
+}
+
+#btnClear {
+  margin: auto;
+  background-color: red;
+  height: 30px;
+  width: 320px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* *************** Panier / Formulaire ******************** */
+/* *************** Page Confirmation commande ******************** */
+.cartEmptyButton {
+  height: 48px;
+  width: 260px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 50px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,30 @@
+{
+  "name": "cc",
+  "version": "1.0.0",
+  "description": "Conception d'un site e-commerce",
+  "main": "server.js",
+  "scripts": {
+    "sass":"sass --watch ./main.scss:./sass/main.css"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emiliebolo/Orinoco.git"
+  },
+  "author": "Emilie Bolo",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.3.8",
+    "mongoose-unique-validator": "^2.0.2",
+    "node-sass": "^5.0.0",
+    "uuid": "^3.3.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Emiliebolo/Orinoco/issues"
+  },
+  "homepage": "https://github.com/Emiliebolo/Orinoco#readme"
+}

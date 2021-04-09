@@ -19,101 +19,57 @@
         <meta name="twitter:description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
         <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg"/>
 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
         <link rel="apple-touch-icon" href="assets/img/favicon.ico">
         <title>Orinoco - Votre e-commerce spécialisé !</title>
         <meta name="description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/sass/main.css">
+        
         
     </head>
 
-    <body>
+    <body >
+        
         <!-- Principal conteneur -->
-        <div class="page-container">
-        <!--début header-->
+        <main >
           <header>
-            <a href="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png">
-                <img  class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
-            </a>
             <nav class="navbar">
-                <ul class="navbar-bar">
-                    <li>
-                        <a class="click-panier" href="pages/panier.html">Panier</a>
-                    </li>
-                </ul>
-            </nav>           
-          </header>
-        <!--fin header-->
-        <!--Produit-->
-        <section>
-            <article><!--article norbert-->
-                <a id="product-link" href="" alt=""></a>
-                <figure>
-                    <img  id="product-img" class="img-peluche" src="assets/img/teddy_1.jpg" alt="image de la peluche norbert">
-                    <figcaption class="figcaption">
-                        <div class="product-info">
-                            <h2>Norbert</h2>
-                            <span class="price"> 29.00€</span>
-                        </div>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                    </figcaption>
-                </figure>
-            </article>
-            <!--fint article norbert-->
-            <article><!--article arnold-->
-                <a id="product-link"></a>
-                <figure>
-                    <img  id="product-img" class="img-peluche" src="assets/img/teddy_2.jpg" alt="image de la peluche arnold">
-                    <figcaption class="figcaption">
-                        <div class="product-info">
-                            <h2>Arnold</h2>
-                            <span class="price"> 39.00€</span>
-                        </div>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                    </figcaption>
-                </figure>
-            </article>
-            <!--fin article arnold-->
-            <article><!--article lenny and carl-->
-                <a id="product-link"></a>
-                <figure>
-                    <img  id="product-img" class="img-peluche" src="assets/img/teddy_3.jpg" alt="image de la peluche lenny and carl">
-                    <figcaption class="figcaption">
-                        <div class="product-info">
-                            <h2>Lenny and Carl</h2>
-                            <span class="price"> 59.00€</span>
-                        </div>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                    </figcaption>
-                </figure>
-            </article>
-            <!--fin article lenny and carl-->
-            <article><!--article gustav-->
-                <a id="product-link"></a>
-                <figure>
-                    <img  id="product-img" class="img-peluche" src="assets/img/teddy_4.jpg" alt="image de la peluche gustav">
-                    <figcaption class="figcaption">
-                        <div class="product-info">
-                            <h2>Gustav</h2>
-                            <span class="price"> 45.00€</span>
-                        </div>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                    </figcaption>
-                </figure>
-            </article>
-            <!--fin article gustav-->
-            <article><!--articles garfunkel-->
-                <a id="product-link"></a>
-                <figure>
-                    <img  id="product-img" class="img-peluche" src="assets/img/teddy_5.jpg" alt="image de la peluche garfunkel">
-                    <figcaption class="figcaption">
-                        <div class="product-info">
-                            <h2>Garfunkel</h2>
-                            <span class="price"> 55.00€</span>
-                        </div>
-                        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                    </figcaption>
-                </figure>
-            </article>
-        </section>
+            <p>
+              <a class="text-light h2 ml-md-5 text-decoration-none" href="index.html" title="Page d'accueil">
+                <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
+              </a>
+            <p>
+              <p class="text-light h3 mr-md-5">
+                <a class="panier text-brown text-decoration-none" href="pages/produit.html">
+                <i class="fas fa-shopping-cart"></i> Mon panier</a>
+              </p>
+          </nav>
+        </header>
 
+             <div>
+                <img src="../Front-end/assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
+                <h1 id="titleText">Notre liste de peluche faite à la main</h1>
+              </div>
+          
+              <section id="itemContainer" class="Container transition duration-200 transform hover:scale-102">
+             <!-- Js scripts -->
+              </section>
+          
+          
+              <!-- Footer Elements -->
+          
+              
+          
+          
+              
+          
+              <script src="assets/js/request Api.js"></script>
+              <script src="assets/js/products class.js"></script>
+              <script src="assets/js/index.js"></script>
+              
+          
+            </main>
     </body>
+</html>
