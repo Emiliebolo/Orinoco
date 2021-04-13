@@ -1,173 +1,168 @@
 
-console.log(document.getElementById('customProduct'));
+(async () => {
+    const productList = await listePeluches()
+    
+    })()
+ 
+       // la fonction dans l'objet permet afficher la struture des produits
+     async function listePeluches () {
 
-// récupération des informations du produit précédent avec id.
- class CustomProduct{
-   constructor(){
-     this.storage = new ListPeluches();
-     const ajaxRequest = new Ajax();
+const urlParams = new URLSearchParams(window.location.search);
+console.log(urlParams);
 
-     let customParams = new URL(window.location.href).searchParams.get('id');/*let customParams = new URLSearchParams(document.location.search);*/
-     console.log(customParams);
-     let id = customParams.get("id");
-     console.log('id= ' + id);
+const id = urlParams.get('id');
+console.log(id);
 
-     ajaxRequest.details(_id).then(
-         (customPeluche) => {
-         const productPeluche = new ProductPeluche ( customPeluche,"produit",(forms) => {
-            const optionChoice = forms.selectChoice.value;
-            console.log(customPeluche)
-            this.storage.add(customPeluche.id, {
-                product: customPeluche,
-                option: optionChoice
-            })
-            document.location.href = "../../pages/produit.html";
-        });
-        const customElement = productPeluche.render();
-        document.getElementById('customProduct').appendChild(customElement);
-    })
-}
-}
+const productList = await Ajax('http://localhost:3000/api/teddies/' + id);
+console.log (productList);
 
+let products = new Products(
+    productList.description,
+    productList.imageUrl,
+    productList.colors,
+    productList.name,
+    productList.price,
+    productList._id,
+);
+console.log(products);
 
-      
+let customProduct = document.getElementById('customProduct');
 
-// Permet l'affichage 
-class Display {
-    render() {}
-}
+let customPeluche = document.createElement('article');
+let customName = document.createElement('h2');
+let customImage = document.createElement('img');
+let customDescription = document.createElement('div');
+let customDescrpt = document.createElement('p');
+let customCheck = document.createElement('div');
+let customLabel = document.createElement('label');
+let customPrice =document.createElement('h3');
+let customButton = document.createElement('button');
 
-
-// Affichage du produit personalisable.
-class ProductPeluche extends Display{
-  constructor(item, custom, onSubmit){
-    super()
-    this.item = item;
-    this.custom = custom;
-    this.onSubmit = onSubmit;
-  }
-  render(){
-     console.info('article')
-     const productContainer = document.createElement('div');
-     
-     const productTitle = new ProductTitle(this.item.name);
-     productContainer.appendChild(productTitle.render());
-
-     const productImage = new ProductImage(this.item.imageURL,this.item.description, 'classImg')
-     productContainer.appendChild(productImage.render());
-
-     const productDescription = new ProductDescription(this.item.description);
-     productContainer.appendChild(productDescription.render());
-
-     const productPrice = new ProductPrice(this.item.price / 100 + ' €');
-     productContainer.appendChild(productPrice.render());
-     productContainer.setAttribute('class', `${this.custom}`);
+customPeluche.setAttribute('class', 'article animation');
+customName.setAttribute('class','Name');
+customImage.setAttribute('src', products.ImageUrl);
+customImage.setAttribute('alt','Peluche à personnaliser');
+customDescription.setAttribute('div','descriptionPeluche');
+customCheck.setAttribute('class','check');
+customLabel.setAttribute('id','select');
+customButton.setAttribute('class','btn');
+customButton.setAttribute('type','button');
+customButton.setAttribute('href','#'+ products._id);
+customButton.setAttribute('id','button');
 
 
+customProduct.appendChild('customPeluche');
+customPeluche.appendChild('customName');
+customPeluche.appendChild('customImage');
+customPeluche.appendChild('customDescription');
+customDescription.appendChild('customDescrpt');
+customDescription.appendChild('customPrice');
+customDescription.appendChild('customCheck');
+customCheck.appendChild('customLabel');
+customCheck.appendChild('customButton');
 
-     // choix de la couleur
-     const labelChoice = document.createElement("label");
-     labelChoice.setAttribute("for", "option_select");
-     labelChoice.textContent = "Choisissez la couleur de votre peluche:";
-     const selectChoice = document.createElement("select");
-     selectChoice.setAttribute("name", "option_select");
-     selectChoice.setAttribute("class", "form-control mb-3 w-25");
-     for (let colors of this.item.colors) {
-         var newChoice = document.createElement("Choix");
-         var newColors = document.createTextNode(colors);
-         newChoice.appendChild(newColors);
-         selectChoice.appendChild(newChoice);
-     };
-     const formContainer = document.createElement('form')
 
-     const buttonContainer = document.createElement('button')
-     buttonContainer.addEventListener('click', () => {
-         this.onSubmit({
-             form: formContainer,
-             selectchoice: selectchoice,
-         })
-     })
+customName.textContent = products.name;
+customPrice.textContent = products.price / 100 + ',00 €';
+customDescrpt.textContent = products.description;
+customButton.textContent = 'Ajouter la peluche au panier';
 
-     itemContainer.appendChild(labelChoice);
-     itemContainer.appendChild(selectChoice);
-   
-     const buttonLabel = new ButtonLabel (this.item._id);
-     itemContainer.appendChild(buttonContainer);
-     buttonContainer.id = "link";
-     buttonContainer.textContent = 'Ajout panier';
-     return itemContainer;
- }
-}
 
-class ProductTitle extends Display {
- constructor(name) {
-     super();
-     this.name = name;
+
+
+// Boucle pour faire appel aux differentes options de couleurs dans la partie label, selon la peluche
+ let select = document.getElementById('select');
+ for (let i=0; i < products.colors.length; i++){
+     let option = document.createElement('option');
+     option.setAttribute('id','optionColor');
+     select.appendChild('option');
+     slect.textContent = products.colors[i];
  }
 
- render() {
-     const titleContainer = document.createElement('h1');
-     titleContainer.innerHTML = `<span>${this.name}</span>`;
-     return titleContainer;
- }
-}
+ // stocker la peluche dans le panier
 
-class ProductImage extends Display {
- constructor(url, description, classImg) {
-     super();
-     this.url = url;
-     this.description = description;
-     this.classImg = classImg;
- }
+let basket = document.getElementById('button');
 
- render() {
-     const imageContainer = document.createElement('img');
-     imageContainer.setAttribute('src', this.url)
-     imageContainer.setAttribute('alt', this.description);
-     imageContainer.setAttribute('class', `${this.classImg}`)
-     return imageContainer;
+// click buton ajout panier
+basket.addEventListener('click', function(){
 
- }
-}
+numberPlush('products');
+totalprice('produts');
+})
 
-class ProductDescription extends Display {
- constructor(contenu) {
-     super();
-     this.contenu = contenu;
- }
 
- render() {
-     const descriptionContainer = document.createElement('p');
-     descriptionContainer.innerHTML = `<span>${this.contenu}</span>`;
-     return descriptionContainer;
 
- }
-}
 
-class ProductPrice extends Display {
- constructor(prix) {
-     super();
-     this.prix = prix;
- }
 
- render() {
-     const priceContainer = document.createElement('p');
-     priceContainer.innerHTML = `<span>${this.prix}</span>`;
 
-     return priceContainer;
-
- }
-}
-
-class ProductButton extends Display {
- constructor(_id) {
-     super();
-     this._id = _id;
- }
 }
 
 
-new CustomProduct()
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

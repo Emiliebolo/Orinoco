@@ -2,7 +2,7 @@
 
 //Fonction principale 
   (async () => {
-	  const products = await listePeluches()
+	  const productList = await listePeluches()
 	  
 	  })()
    
@@ -47,7 +47,7 @@
 			productImage.setAttribute('alt', 'peluche faite à la main');
 			productLink.setAttribute(
 				'href',
-				'..//../pages/produit.html?id=' + products._id,
+				'..//../pages/produit.html?='+ products._id,
 			);
 			productLink.setAttribute('class', 'cart' , 'link');
 
@@ -63,8 +63,8 @@
 
             //Contenu des balises
 			productDescript.textContent = products.description;
-			productName.textContent = products.name;// affichage du non de la peluche non effectué
-			productPrice.textContent = `${products.price / 100} €`;// problème d'affichage NAN
+			productName.textContent = products.name;// affichage du nom de la peluche non effectué
+			productPrice.textContent = parseInt(products.price);// problème d'affichage NAN
 			productLink.textContent = 'Acheter le produit';
 		}
 
