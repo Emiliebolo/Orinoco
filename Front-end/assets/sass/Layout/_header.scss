@@ -1,5 +1,5 @@
 .logo{
-    position: absolute;
+    
     width: 150px;
 }
 .navbar {
@@ -16,13 +16,15 @@
     background-color: #f3e9f1;
 }
 
-a {
+.panier{
     color: rgb(66, 8, 42);
     font-weight: bold;
     font-size: 0.9em;
+    text-decoration: none;
  
-    &:hover {
-    color: rgb(21, 1, 22);
+  .panier:hover {
+    color: ivory;
+    text-decoration: none;
 }
 
 }

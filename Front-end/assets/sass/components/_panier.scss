@@ -1,0 +1,42 @@
+#containerCard{
+    margin: 20px;
+.info{
+    margin: 10px;
+}
+.text-center{
+    font-weight: bold;
+}
+.infoPanier{
+    background-color: #eec6f1;
+    color: brown;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 1px 1px 11px #555;
+}
+
+}
+th{
+    color: black;
+    
+}
+#btnAddRemove{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.btnCartEmpty{
+    margin-left: 10px;
+}
+label{
+    font-weight: bold;
+}
+.fillTheForm{
+    margin: 20px;
+    font-size: 20px;
+}
+.btnValidateForm{
+    margin: 30px;
+}
+#formulaire{
+    background-color: #eec6f1 ;
+}

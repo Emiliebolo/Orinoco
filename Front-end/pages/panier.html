@@ -18,54 +18,124 @@
         <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches !" />
         <meta name="twitter:description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
         <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <link rel="apple-touch-icon" href="assets/img/favicon.ico">
-        <title>Orinoco - Votre e-commerce spécialisé !</title>
+        <link	rel="stylesheet"	href="../polices/fontawesome-free-5.15.1-web/css/all.css"
+		/>
+        <title>Orinoco - Votre e-commerce spécialisé - panier !</title>
         <meta name="description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="../../Front-end/assets/sass/main.css">
         
     </head>
 
     <body >
-        
-        <!-- Principal conteneur -->
-        <main >
-          <header>
-            <nav class="navbar">
-            <p>
-              <a class="text-light h2 ml-md-5 text-decoration-none" href="index.html" title="Page d'accueil">
-                <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
-              </a>
-            <p>
-              <p class="text-light h3 mr-md-5">
-                <a class="panier text-light text-decoration-none" href="produit.html">
-                <i class="fas fa-shopping-cart"></i> Mon panier</a>
-              </p>
-          </nav>
-        </header>
+      <header>
+        <nav class="navbar">
+          <a class="text-light h2 ml-md-5 text-decoration-none" href="../index.html" title="Page d'accueil">
+            <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
+          </a>
+          <p class="text-light h3 mr-md-5">
+            <a class="panier text-decoration-none text-secondary" href="../index.html">
+            <i class="fas fa-shopping-cart"></i>Accueil</a>
+          </p>
+      </nav>
+    </header>
 
              <div>
-                <img src="../Front-end/assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
-                <h1 id="titleText">Passez votre commande</h1>
+                <img src="../assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
+                <h1 id="titleText">Détail de votre commande </h1>
               </div>
-          
-              <div id="productBasket">
-                <!-- basket -->
-              </div>
-          
+        
+              <main>
+                <!-- Principal conteneur pour importation produits dans le panier -->
+                <section id="containerCard">
+                  <div class="info">
+                    <h2 class='text-center'>Récapitulatif de votre panier</h2>
+                  </div>
+                  <table class="infoPanier table table-dark table-hover table-striped col">
+                    <tr class="table-dark table table-hover">
+                    <th class="title text-center ">Produit</th>
+                    <th class="color text-center">Couleur</th>
+                    <th class="price text-center">Prix</th>
+                    <th class="quantity text-center ">Quantité</th>
+                    <th class="total text-center">Total</th>
+                    </tr>
+                    <tbody id="custom-peluches">
+                    </tbody>
+                  </table>
+                   
+                  
+
+                  <div id="btnAddRemove">
+                    <a href="../index.html" class="btn btn-light btn-outline-dark btnCart col-md-2 col">
+                      <i></i> Continuer mes achats
+                    </a>
+                    <button type="button" class="btn btn-light btn-outline-dark btnCart btnCartEmpty col-md-2 col">Supprimer mon panier</button>
+                  </div>
+                </div>
+            
+                <div id="formulaire" class="shadow card form">
+                  <p class='text-center fillTheForm'>Remplissez le formulaire</p>
+                  <form name="cartCheckout" method="post" action="#">
+                    <div class='form-row'>
+
+                     <div class="form-group col-md-3">
+                      <div class='col'>
+                        <label for="formLastName">last Name</label>
+                        <input type="text" class="form-control" id="formLastName" name="formLastName" minlength="3" required>
+                        <span class="error" id="errorLastName"></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <div class='col'>
+                        <label for="formFirstName">first Name</label>
+                        <input type="text" class="form-control" id="formFirstName" name="formFirstName" minlength="3" required>
+                        <span class="error" id="errorFirstName"></span>
+                      </div>
+                    </div>
+                  
+                    <div class="form-group col-md-3">
+                      <label for="formAddress">Adress</label>
+                      <input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="12 avenue des coquelicots" minlength="3" required>
+                      <span class="error" id="errorAddress"></span>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <div class='col'>
+                        <label for="formCity">city</label>
+                        <input type="text" class="form-control" id="formCity" name="formCity" minlength="3" required>
+                        <span class="error" id="errorCity"></span>
+                      </div>
+                    </div>
+
+                    <div class="form-group col-md-3">
+                      <div class="col">
+                        <label for="formEmail">Email</label>
+                        <input type="email" class="form-control" id="formEmail" name="formEmail" required>
+                        <span class="error" id="errorEmail"></span>
+                      </div>
+                    </div>
+
+                    </div>
+                    <div class=" text-center btnValidateForm">
+                      <button href= 'confirmation.html'type="submit" class="btn btn-light btn-outline-dark btnForm ">Valider mon panier</button>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+                </section>
+               
+              </main>
           
           
               <!-- Footer Elements -->
           
+              <script src="../assets/js/CartObject.js"></script>
+              <script src="../assets/js/cart.js"></script>
               
-          
-          
-              <!-- Js scripts -->
-          
-              <script src="assets/js/request Api.js"></script>
-              <script src="assets/js/cart.js"></script>
               
-          
-            </main>
     </body>
 </html>

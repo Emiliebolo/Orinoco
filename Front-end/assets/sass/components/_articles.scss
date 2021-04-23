@@ -1,27 +1,33 @@
 // Styles des produits affichés sur la page accueil
-.Container {
+.container {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
 	padding-top: 50px;
+	max-width: 100%;
 	.card {
         background-color: rgb(238, 198, 241);
         box-shadow: 1px 1px 15px #555;
         border-radius: 30px;
-        margin: 28px;
+        margin: 20px;
         align-items: center;
         width: 450px;
         text-align: center;
 		padding: 30px;
 		overflow: hidden;
 		position: relative;
-		height: 500px;
+		height: 450px;
 		.peluche {
-			width: 420px;
-			border-radius: 30px;
+			width: 435px;
+			border-radius: 20px;
 			height: 210px;
 			box-shadow: 1px 1px 15px #555;
-			margin-top: 15px;
+			margin-top: -25px;
+			transform: 400ms;
+	        &:hover{
+				transform: scale(1.1);
+		}
+
 		}
 		.description {
 			display: flex;
@@ -30,17 +36,12 @@
 			align-items: center;
 		}
 		.descriptionPeluche{
-			font-family: 'labster';
-			padding-top: 80px;
+			padding-top: 20px;
 			font-family: 'lobster', cursive;
-            font-size: 1.2em;
-            color: brown;
-		
+            color: black;
 
 		}
 		h2{
-			position: absolute;
-            top:0;
             left: 180px;
 			font-family: 'labster', cursive;
 			font-size: 2em;
@@ -50,37 +51,167 @@
 			position: absolute;
 			width: 93.6%;
 			font-weight: bold;
-			transition: all 0.3s ease-in-out;
 			opacity: 0;
 			cursor: pointer;
 			text-align: center;
-		}
+			transition: transform 400ms;
+			&:hover {
+				transform: scale(1.15);
+				background-color: #FFFFFF;
+				box-shadow: 7px 3px 10px rgba(0,0,0,.5);
+	}
+
+	}
+
 		a {
             font-size: 1.3em;
             position: absolute;
-            bottom: 30px;
+            bottom: 10px;
             border-style: dashed solid;
             padding: 5px;
-            color: aliceblue;
+            color: brown;
+			left: 130px;
+			transform: 400ms;
+			&:hover{
+				transform: scale(1.15);
+				background-color: #f3e9f1;
+				box-shadow: 7px 3px 10px rgba(0,0,0,.5);
+				text-decoration: none;
+			}
 		}
 		.prix{
 			position: absolute;
-            bottom: 70px;
-            left: 200px;
-			font-size: 1.3em;
+            bottom: 60px;
+            left: 179px;
+			font-size: 1.6em;
+			font-weight: bold;
 		}
 		p{
 			font-family: 'labster', cursive;
-			color: brown;
+			color: azure ;
 		}
 		.duration-200 {
 			transition-duration: 200ms;
 		}
 		.transition {
 			transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-			transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+			$courbe: cubic-bezier(0.4, 0, 0.2, 1);
 
 			}
 	}
 }
 
+
+.Container {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	.card {
+        background-color: rgb(238, 198, 241);
+        box-shadow: 1px 1px 15px #555;
+        border-radius: 30px;
+        align-items: center;
+        width: 445px;
+        text-align: center;
+		overflow: hidden;
+		position: relative;
+		height: 450px;
+		.peluches {
+			width: 425px;
+			border-radius: 20px;
+			height: 210px;
+			box-shadow: 1px 1px 15px #555;
+			margin-top: 10px;
+			transform: 400ms;
+	        &:hover{
+				transform: scale(1.1);
+		}
+
+		}
+		.description {
+			display: flex;
+			justify-content: space-between;
+			height: 50px;
+			align-items: center;
+		}
+		.customPeluche{
+			font-family: 'lobster', cursive;
+            color: black;
+			position: relative;
+			
+
+		}
+		h2{
+			font-family: 'labster', cursive;
+			font-size: 2em;
+			color: brown;
+			
+		}
+		.link {
+			position: absolute;
+			width: 93.6%;
+			font-weight: bold;
+			opacity: 0;
+			cursor: pointer;
+			text-align: center;
+			transition: transform 400ms;
+			&:hover {
+				transform: scale(1.15);
+				background-color: #FFFFFF;
+				box-shadow: 7px 3px 10px rgba(0,0,0,.5);
+	}
+
+	}
+
+		a {
+            font-size: 1.3em;
+            position: absolute;
+            bottom: 10px;
+            border-style: dashed solid;
+            padding: 5px;
+            color: brown;
+			left: 130px;
+			transform: 400ms;
+			&:hover{
+				transform: scale(1.15);
+				background-color: #f3e9f1;
+				box-shadow: 7px 3px 10px rgba(0,0,0,.5);
+				text-decoration: none;
+			}
+		}
+		.prix{
+			position: relative;
+			margin-top: -10px;
+			font-size: 1.6em;
+			font-weight: bold;
+		}
+		.color-list{
+			position: absolute;
+            right: 90px;
+            bottom: 60px;
+			font-weight: bold;
+		}
+		.color{
+			background-color: #f3e9f1;
+			font-weight: bold;
+			color: brown;
+		}
+		option{
+			font-weight: bold;
+			color: brown;
+		}
+		p{
+			font-family: 'labster', cursive;
+			color: azure ;
+		}
+		.duration-200 {
+			transition-duration: 200ms;
+		}
+		.transition {
+			transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+			$courbe: cubic-bezier(0.4, 0, 0.2, 1);
+
+			}
+	}
+}

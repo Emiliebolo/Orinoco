@@ -1,0 +1,37 @@
+.orderContent{
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    display: grid;
+    box-shadow: 1px 1px 15px #555;
+    margin: 0 300px 0 300px;
+    background-color: rgb(238, 198, 241);
+    border-radius: 20px;
+    
+ #orderID{
+     padding-top: 10px;
+     font-weight: bold;
+     color: brown;
+ }
+ .total{
+     font-weight: bold;
+     color:brown;
+ }
+ .order{
+     font-weight: bold;
+     color: brown;
+ }
+ #goBack{
+     margin-bottom: 20px;
+ }
+   }
+.recap{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin: 0 0 45px 0;
+}
+.orderStyle{
+    background-color: #e8e8e8;
+    padding-bottom: 30px;
+}

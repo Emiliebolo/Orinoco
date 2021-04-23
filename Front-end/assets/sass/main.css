@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/* Définition des couleurs */
-/* Définition effet apparition */
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 body {
   margin: auto;
@@ -16,7 +13,6 @@ body {
 }
 
 .logo {
-  position: absolute;
   width: 150px;
 }
 
@@ -41,14 +37,16 @@ body {
   background-color: #f3e9f1;
 }
 
-a {
+.panier {
   color: #42082a;
   font-weight: bold;
   font-size: 0.9em;
+  text-decoration: none;
 }
 
-a:hover {
-  color: #150116;
+.panier .panier:hover {
+  color: ivory;
+  text-decoration: none;
 }
 
 #titleText {
@@ -63,7 +61,7 @@ a:hover {
   color: brown;
 }
 
-.Container {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,14 +71,15 @@ a:hover {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 50px;
+  max-width: 100%;
 }
 
-.Container .card {
+.container .card {
   background-color: #eec6f1;
   -webkit-box-shadow: 1px 1px 15px #555;
           box-shadow: 1px 1px 15px #555;
   border-radius: 30px;
-  margin: 28px;
+  margin: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -89,16 +88,158 @@ a:hover {
   padding: 30px;
   overflow: hidden;
   position: relative;
-  height: 500px;
+  height: 450px;
 }
 
-.Container .card .peluche {
-  width: 420px;
-  border-radius: 30px;
+.container .card .peluche {
+  width: 435px;
+  border-radius: 20px;
   height: 210px;
   -webkit-box-shadow: 1px 1px 15px #555;
           box-shadow: 1px 1px 15px #555;
-  margin-top: 15px;
+  margin-top: -25px;
+  -webkit-transform: 400ms;
+          transform: 400ms;
+}
+
+.container .card .peluche:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.container .card .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card .descriptionPeluche {
+  padding-top: 20px;
+  font-family: 'lobster', cursive;
+  color: black;
+}
+
+.container .card h2 {
+  left: 180px;
+  font-family: 'labster', cursive;
+  font-size: 2em;
+  color: brown;
+}
+
+.container .card .link {
+  position: absolute;
+  width: 93.6%;
+  font-weight: bold;
+  opacity: 0;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.container .card .link:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container .card a {
+  font-size: 1.3em;
+  position: absolute;
+  bottom: 10px;
+  border-style: dashed solid;
+  padding: 5px;
+  color: brown;
+  left: 130px;
+  -webkit-transform: 400ms;
+          transform: 400ms;
+}
+
+.container .card a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #f3e9f1;
+  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.container .card .prix {
+  position: absolute;
+  bottom: 60px;
+  left: 179px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.container .card p {
+  font-family: 'labster', cursive;
+  color: azure;
+}
+
+.container .card .duration-200 {
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+}
+
+.container .card .transition {
+  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+}
+
+.Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Container .card {
+  background-color: #eec6f1;
+  -webkit-box-shadow: 1px 1px 15px #555;
+          box-shadow: 1px 1px 15px #555;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 445px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 450px;
+}
+
+.Container .card .peluches {
+  width: 425px;
+  border-radius: 20px;
+  height: 210px;
+  -webkit-box-shadow: 1px 1px 15px #555;
+          box-shadow: 1px 1px 15px #555;
+  margin-top: 10px;
+  -webkit-transform: 400ms;
+          transform: 400ms;
+}
+
+.Container .card .peluches:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .Container .card .description {
@@ -114,18 +255,13 @@ a:hover {
           align-items: center;
 }
 
-.Container .card .descriptionPeluche {
-  font-family: 'labster';
-  padding-top: 80px;
+.Container .card .customPeluche {
   font-family: 'lobster', cursive;
-  font-size: 1.2em;
-  color: brown;
+  color: black;
+  position: relative;
 }
 
 .Container .card h2 {
-  position: absolute;
-  top: 0;
-  left: 180px;
   font-family: 'labster', cursive;
   font-size: 2em;
   color: brown;
@@ -135,32 +271,72 @@ a:hover {
   position: absolute;
   width: 93.6%;
   font-weight: bold;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   opacity: 0;
   cursor: pointer;
   text-align: center;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.Container .card .link:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .Container .card a {
   font-size: 1.3em;
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   border-style: dashed solid;
   padding: 5px;
-  color: aliceblue;
+  color: brown;
+  left: 130px;
+  -webkit-transform: 400ms;
+          transform: 400ms;
+}
+
+.Container .card a:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background-color: #f3e9f1;
+  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  text-decoration: none;
 }
 
 .Container .card .prix {
+  position: relative;
+  margin-top: -10px;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.Container .card .color-list {
   position: absolute;
-  bottom: 70px;
-  left: 200px;
-  font-size: 1.3em;
+  right: 90px;
+  bottom: 60px;
+  font-weight: bold;
+}
+
+.Container .card .color {
+  background-color: #f3e9f1;
+  font-weight: bold;
+  color: brown;
+}
+
+.Container .card option {
+  font-weight: bold;
+  color: brown;
 }
 
 .Container .card p {
   font-family: 'labster', cursive;
-  color: brown;
+  color: azure;
 }
 
 .Container .card .duration-200 {
@@ -173,73 +349,112 @@ a:hover {
   transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ******************** Style des boutons généraux ******************** */
-.btn {
-  height: 48px;
-  width: 160px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  cursor: pointer;
+#containerCard {
+  margin: 20px;
+}
+
+#containerCard .info {
+  margin: 10px;
+}
+
+#containerCard .text-center {
   font-weight: bold;
 }
 
-.btnDecreaseIncrease {
-  cursor: pointer;
+#containerCard .infoPanier {
+  background-color: #eec6f1;
+  color: brown;
+  font-weight: bold;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 11px #555;
+          box-shadow: 1px 1px 11px #555;
 }
 
-.btnAnim:hover {
-  -webkit-transform: scale(1.01);
-  transform: scale(1.01);
-  -webkit-transition: all 0.1s linear;
-  transition: all 0.1s linear;
+th {
+  color: black;
 }
 
-.btnAnim:active {
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-}
-
-/* *************** Panier ******************** */
-.buttonBuy {
-  margin-top: 30px;
-  margin-bottom: 100px;
+#btnAddRemove {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
 }
 
-.buttonBuy #buttonContinueAchat {
-  margin-right: 5px;
+.btnCartEmpty {
+  margin-left: 10px;
 }
 
-#btnClear {
-  margin: auto;
-  background-color: red;
-  height: 30px;
-  width: 320px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  cursor: pointer;
+label {
   font-weight: bold;
-  margin-top: 50px;
 }
 
-/* *************** Panier / Formulaire ******************** */
-/* *************** Page Confirmation commande ******************** */
-.cartEmptyButton {
-  height: 48px;
-  width: 260px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  cursor: pointer;
+.fillTheForm {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.btnValidateForm {
+  margin: 30px;
+}
+
+#formulaire {
+  background-color: #eec6f1;
+}
+
+.orderContent {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px;
+  display: grid;
+  -webkit-box-shadow: 1px 1px 15px #555;
+          box-shadow: 1px 1px 15px #555;
+  margin: 0 300px 0 300px;
+  background-color: #eec6f1;
+  border-radius: 20px;
+}
+
+.orderContent #orderID {
+  padding-top: 10px;
   font-weight: bold;
-  margin-top: 50px;
+  color: brown;
+}
+
+.orderContent .total {
+  font-weight: bold;
+  color: brown;
+}
+
+.orderContent .order {
+  font-weight: bold;
+  color: brown;
+}
+
+.orderContent #goBack {
+  margin-bottom: 20px;
+}
+
+.recap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bold;
+  margin: 0 0 45px 0;
+}
+
+.orderStyle {
+  background-color: #e8e8e8;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
