@@ -14,6 +14,7 @@ class OrderConfirmation {
         document.querySelector("#orderAddress").innerHTML = 'Adresse: ' + this.productsContact.contact.address;
         document.querySelector("#orderCity").innerHTML = 'Ville: ' + this.productsContact.contact.city;
         document.querySelector("#orderEmail").innerHTML = 'Email: ' + this.productsContact.contact.email;
+        console.log(this.productsContact);
       }
     }
   

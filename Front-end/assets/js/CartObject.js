@@ -136,7 +136,7 @@ class CartObject {
   }
 
   checkFormInput() {
-    let checkString =  /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'-]{3,}/; // une expression regex pour faire correspondre des combinaisons de caractères. 
+    let checkString = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'-]{3,}/; // une expression regex pour faire correspondre des combinaisons de caractères. 
     let checkEmail = /^[^\s@]+@[^\s@]+$/;// permet d'éviter une erreur double @ 
     let checkAddress = /^[a-zA-Z0-9-áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s-]{3,}/;
     let formLastName = document.getElementById("formLastName").value;
@@ -184,6 +184,7 @@ class CartObject {
       //localStorage.clear();// localStorage.clear supprimée pour éviter la suppression du local storage contenant les infos de la peluche lors du passage de la confirmation 
     })
     ();
+    console.log("http://localhost:3000/api/teddies/order");
   }
 
   orderConfirmation() {
@@ -211,8 +212,7 @@ class CartObject {
         this.fetchRequest(productsContact);
       }
     })
+    console.log(this.cartContain);
   }
-  getCartContain(){
-    return this.cartContain;
-  }
+ 
 }

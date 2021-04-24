@@ -61,7 +61,7 @@ body {
   color: brown;
 }
 
-.container {
+.containers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +74,7 @@ body {
   max-width: 100%;
 }
 
-.container .card {
+.containers .card {
   background-color: #eec6f1;
   -webkit-box-shadow: 1px 1px 15px #555;
           box-shadow: 1px 1px 15px #555;
@@ -91,7 +91,7 @@ body {
   height: 450px;
 }
 
-.container .card .peluche {
+.containers .card .peluche {
   width: 435px;
   border-radius: 20px;
   height: 210px;
@@ -102,12 +102,12 @@ body {
           transform: 400ms;
 }
 
-.container .card .peluche:hover {
+.containers .card .peluche:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.container .card .description {
+.containers .card .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,20 +120,20 @@ body {
           align-items: center;
 }
 
-.container .card .descriptionPeluche {
+.containers .card .descriptionPeluche {
   padding-top: 20px;
   font-family: 'lobster', cursive;
   color: black;
 }
 
-.container .card h2 {
+.containers .card h2 {
   left: 180px;
   font-family: 'labster', cursive;
   font-size: 2em;
   color: brown;
 }
 
-.container .card .link {
+.containers .card .link {
   position: absolute;
   width: 93.6%;
   font-weight: bold;
@@ -146,7 +146,7 @@ body {
   transition: transform 400ms, -webkit-transform 400ms;
 }
 
-.container .card .link:hover {
+.containers .card .link:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background-color: #FFFFFF;
@@ -154,7 +154,7 @@ body {
           box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.container .card a {
+.containers .card a {
   font-size: 1.3em;
   position: absolute;
   bottom: 10px;
@@ -166,7 +166,7 @@ body {
           transform: 400ms;
 }
 
-.container .card a:hover {
+.containers .card a:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background-color: #f3e9f1;
@@ -175,7 +175,7 @@ body {
   text-decoration: none;
 }
 
-.container .card .prix {
+.containers .card .prix {
   position: absolute;
   bottom: 60px;
   left: 179px;
@@ -183,24 +183,24 @@ body {
   font-weight: bold;
 }
 
-.container .card p {
+.containers .card p {
   font-family: 'labster', cursive;
   color: azure;
 }
 
-.container .card .duration-200 {
+.containers .card .duration-200 {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
 }
 
-.container .card .transition {
+.containers .card .transition {
   -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 
-.Container {
+.Containers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@ body {
   padding-bottom: 50px;
 }
 
-.Container .card {
+.Containers .card {
   background-color: #eec6f1;
   -webkit-box-shadow: 1px 1px 15px #555;
           box-shadow: 1px 1px 15px #555;
@@ -226,7 +226,7 @@ body {
   height: 450px;
 }
 
-.Container .card .peluches {
+.Containers .card .peluches {
   width: 425px;
   border-radius: 20px;
   height: 210px;
@@ -237,12 +237,12 @@ body {
           transform: 400ms;
 }
 
-.Container .card .peluches:hover {
+.Containers .card .peluches:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.Container .card .description {
+.Containers .card .description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -255,19 +255,19 @@ body {
           align-items: center;
 }
 
-.Container .card .customPeluche {
+.Containers .card .customPeluche {
   font-family: 'lobster', cursive;
   color: black;
   position: relative;
 }
 
-.Container .card h2 {
+.Containers .card h2 {
   font-family: 'labster', cursive;
   font-size: 2em;
   color: brown;
 }
 
-.Container .card .link {
+.Containers .card .link {
   position: absolute;
   width: 93.6%;
   font-weight: bold;
@@ -280,7 +280,7 @@ body {
   transition: transform 400ms, -webkit-transform 400ms;
 }
 
-.Container .card .link:hover {
+.Containers .card .link:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background-color: #FFFFFF;
@@ -288,7 +288,7 @@ body {
           box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
-.Container .card a {
+.Containers .card a {
   font-size: 1.3em;
   position: absolute;
   bottom: 10px;
@@ -300,7 +300,7 @@ body {
           transform: 400ms;
 }
 
-.Container .card a:hover {
+.Containers .card a:hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   background-color: #f3e9f1;
@@ -309,42 +309,42 @@ body {
   text-decoration: none;
 }
 
-.Container .card .prix {
+.Containers .card .prix {
   position: relative;
   margin-top: -10px;
   font-size: 1.6em;
   font-weight: bold;
 }
 
-.Container .card .color-list {
+.Containers .card .color-list {
   position: absolute;
   right: 90px;
   bottom: 60px;
   font-weight: bold;
 }
 
-.Container .card .color {
+.Containers .card .color {
   background-color: #f3e9f1;
   font-weight: bold;
   color: brown;
 }
 
-.Container .card option {
+.Containers .card option {
   font-weight: bold;
   color: brown;
 }
 
-.Container .card p {
+.Containers .card p {
   font-family: 'labster', cursive;
   color: azure;
 }
 
-.Container .card .duration-200 {
+.Containers .card .duration-200 {
   -webkit-transition-duration: 200ms;
           transition-duration: 200ms;
 }
 
-.Container .card .transition {
+.Containers .card .transition {
   -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;

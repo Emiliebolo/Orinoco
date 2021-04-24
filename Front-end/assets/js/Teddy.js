@@ -81,9 +81,9 @@ btnAddCart.innerHTML = 'Ajouter au panier';
 
 containAddBtn.appendChild(btnAddCart);
 
-const cart = new CartObject();
+const cartObject = new CartObject();
 document.querySelector('.addToCart').addEventListener('click', () => {
-  cart.addToCart({
+  cartObject.addToCart({
   'name': this.name,
   'color': document.querySelector(".selectColor").value,
   'price': this.price,
