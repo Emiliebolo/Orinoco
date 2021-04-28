@@ -1,460 +1,1250 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-body {
-  margin: auto;
-  padding: 0;
-  background: #e8e8e8;
+@media (min-width: 1400px) {
+  body {
+    margin: auto;
+    padding: 0;
+    background: #e8e8e8;
+  }
+  .ourson {
+    width: 1000px;
+    height: 350px;
+    display: block;
+    margin: auto;
+  }
 }
 
-.ourson {
-  width: 1000px;
-  height: 350px;
-  display: block;
-  margin: auto;
+@media (max-width: 480px) {
+  body {
+    margin: auto;
+    padding: 0;
+    background: #e8e8e8;
+  }
+  .ourson {
+    height: 210px;
+    display: block;
+    margin-top: 20px;
+  }
 }
 
-.logo {
-  width: 150px;
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    margin: auto;
+    padding: 0;
+    background: #e8e8e8;
+  }
+  .ourson {
+    height: 350px;
+    display: block;
+    margin: auto;
+  }
 }
 
-.navbar {
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: .5rem 1rem;
-  background-color: #f3e9f1;
+@media (max-width: 480px) {
+  .logo {
+    width: 120px;
+  }
+  .navbar {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: #f3e9f1;
+  }
+  .panier {
+    color: #42082a;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-decoration: none;
+  }
+  .panier .panier:hover {
+    color: ivory;
+    text-decoration: none;
+  }
+  #titleText {
+    width: 100%;
+    text-shadow: 3px 3px #42082a;
+    text-align: center;
+    font-family: 'lobster', cursive;
+    font-size: 2.5em;
+    color: brown;
+  }
 }
 
-.panier {
-  color: #42082a;
-  font-weight: bold;
-  font-size: 0.9em;
-  text-decoration: none;
+@media (min-width: 1400px) {
+  .logo {
+    width: 150px;
+  }
+  .navbar {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: #f3e9f1;
+  }
+  .panier {
+    color: #42082a;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  .panier .panier:hover {
+    color: ivory;
+    text-decoration: none;
+  }
+  #titleText {
+    width: 100%;
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    text-shadow: 3px 3px #42082a;
+    text-align: center;
+    font-family: 'lobster', cursive;
+    font-size: 3.5em;
+    color: brown;
+  }
 }
 
-.panier .panier:hover {
-  color: ivory;
-  text-decoration: none;
+@media (min-width: 481px) and (max-width: 768px) {
+  .logo {
+    width: 150px;
+  }
+  .navbar {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem 1rem;
+    background-color: #f3e9f1;
+  }
+  .panier {
+    color: #42082a;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+  }
+  .panier .panier:hover {
+    color: ivory;
+    text-decoration: none;
+  }
+  #titleText {
+    width: 100%;
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    text-shadow: 3px 3px #42082a;
+    text-align: center;
+    font-family: 'lobster', cursive;
+    font-size: 3.5em;
+    color: brown;
+  }
 }
 
-#titleText {
-  width: 100%;
-  position: absolute;
-  top: 225px;
-  left: 0px;
-  text-shadow: 3px 3px #42082a;
-  text-align: center;
-  font-family: 'lobster', cursive;
-  font-size: 3.5em;
-  color: brown;
+@media (max-width: 480px) {
+  .containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+    max-width: 100%;
+  }
+  .containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    margin: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 450px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .containers .card .peluche {
+    width: 320px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: -25px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card .peluche:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containers .card .descriptionPeluche {
+    font-family: 'lobster', cursive;
+    color: black;
+  }
+  .containers .card h2 {
+    font-family: 'labster', cursive;
+    font-size: 1.5em;
+    color: brown;
+    font-weight: bold;
+  }
+  .containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .containers .card a {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 10px;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    left: 80px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .containers .card .prix {
+    position: absolute;
+    bottom: 50px;
+    left: 125px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
+  .Containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .Containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 445px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .Containers .card .peluches {
+    width: 355px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: 10px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card .peluches:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .Containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Containers .card .customPeluche {
+    font-family: 'lobster', cursive;
+    color: black;
+    position: relative;
+  }
+  .Containers .card h2 {
+    font-family: 'labster', cursive;
+    font-size: 1.4em;
+    color: brown;
+    font-weight: bold;
+  }
+  .Containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .Containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .Containers .card a {
+    font-size: 1.2em;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .Containers .card .prix {
+    position: relative;
+    margin-top: -20px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .Containers .card .color-list {
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+  }
+  .Containers .card .color {
+    background-color: #f3e9f1;
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card option {
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card .selectColor {
+    font-family: 'labster', cursive;
+    color: brown;
+    background-color: burlywood;
+  }
+  .Containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .Containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .Containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
 }
 
-.containers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-top: 50px;
-  max-width: 100%;
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    overflow: hidden;
+  }
+  .containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+  .containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    margin: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 450px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .containers .card .peluche {
+    width: 435px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: -25px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card .peluche:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containers .card .descriptionPeluche {
+    padding-top: 20px;
+    font-family: 'lobster', cursive;
+    color: black;
+  }
+  .containers .card h2 {
+    left: 180px;
+    font-family: 'labster', cursive;
+    font-size: 2em;
+    color: brown;
+  }
+  .containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .containers .card a {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 10px;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    left: 130px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .containers .card .prix {
+    position: absolute;
+    bottom: 60px;
+    left: 179px;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
+  .Containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .Containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 445px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .Containers .card .peluches {
+    width: 410px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: 10px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card .peluches:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .Containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Containers .card .customPeluche {
+    font-family: 'lobster', cursive;
+    color: black;
+    position: relative;
+  }
+  .Containers .card h2 {
+    font-family: 'labster', cursive;
+    font-size: 1.6em;
+    color: brown;
+    font-weight: bold;
+  }
+  .Containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .Containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .Containers .card a {
+    font-size: 1.2em;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .Containers .card .prix {
+    position: relative;
+    margin-top: -20px;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+  .Containers .card .color-list {
+    position: relative;
+    bottom: 20px;
+    font-weight: bold;
+  }
+  .Containers .card .color {
+    background-color: #f3e9f1;
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card option {
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .Containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .Containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
 }
 
-.containers .card {
-  background-color: #eec6f1;
-  -webkit-box-shadow: 1px 1px 15px #555;
-          box-shadow: 1px 1px 15px #555;
-  border-radius: 30px;
-  margin: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 450px;
-  text-align: center;
-  padding: 30px;
-  overflow: hidden;
-  position: relative;
-  height: 450px;
+@media (min-width: 1400px) {
+  .containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 50px;
+    max-width: 100%;
+  }
+  .containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    margin: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 450px;
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .containers .card .peluche {
+    width: 435px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: -25px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card .peluche:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .containers .card .descriptionPeluche {
+    padding-top: 20px;
+    font-family: 'lobster', cursive;
+    color: black;
+  }
+  .containers .card h2 {
+    left: 180px;
+    font-family: 'labster', cursive;
+    font-size: 2em;
+    color: brown;
+  }
+  .containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .containers .card a {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 10px;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    left: 130px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .containers .card .prix {
+    position: absolute;
+    bottom: 60px;
+    left: 179px;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
+  .Containers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .Containers .card {
+    background-color: #eec6f1;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    border-radius: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 445px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    height: 450px;
+  }
+  .Containers .card .peluches {
+    width: 425px;
+    border-radius: 20px;
+    height: 210px;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin-top: 10px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card .peluches:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .Containers .card .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 50px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Containers .card .customPeluche {
+    font-family: 'lobster', cursive;
+    color: black;
+    position: relative;
+  }
+  .Containers .card h2 {
+    font-family: 'labster', cursive;
+    font-size: 2em;
+    color: brown;
+  }
+  .Containers .card .link {
+    position: absolute;
+    width: 93.6%;
+    font-weight: bold;
+    opacity: 0;
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+  }
+  .Containers .card .link:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+  }
+  .Containers .card a {
+    font-size: 1.3em;
+    position: absolute;
+    bottom: 10px;
+    border-style: dashed solid;
+    padding: 5px;
+    color: brown;
+    left: 130px;
+    -webkit-transform: 400ms;
+            transform: 400ms;
+  }
+  .Containers .card a:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    background-color: #f3e9f1;
+    -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  .Containers .card .prix {
+    position: relative;
+    margin-top: -10px;
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+  .Containers .card .color-list {
+    position: absolute;
+    right: 90px;
+    bottom: 60px;
+    font-weight: bold;
+  }
+  .Containers .card .color {
+    background-color: #f3e9f1;
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card option {
+    font-weight: bold;
+    color: brown;
+  }
+  .Containers .card p {
+    font-family: 'labster', cursive;
+    color: azure;
+  }
+  .Containers .card .duration-200 {
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+  }
+  .Containers .card .transition {
+    -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
+  }
 }
 
-.containers .card .peluche {
-  width: 435px;
-  border-radius: 20px;
-  height: 210px;
-  -webkit-box-shadow: 1px 1px 15px #555;
-          box-shadow: 1px 1px 15px #555;
-  margin-top: -25px;
-  -webkit-transform: 400ms;
-          transform: 400ms;
+@media (min-width: 1400px) {
+  #containerCard {
+    margin: 20px;
+  }
+  #containerCard .info {
+    margin: 10px;
+  }
+  #containerCard .text-center {
+    font-weight: bold;
+  }
+  #containerCard .infoPanier {
+    background-color: #eec6f1;
+    color: brown;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 11px #555;
+            box-shadow: 1px 1px 11px #555;
+  }
+  th {
+    color: black;
+  }
+  #btnAddRemove {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+  }
+  .btnCartEmpty {
+    margin-left: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .fillTheForm {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .btnValidateForm {
+    margin: 30px;
+  }
+  #formulaire {
+    background-color: #eec6f1;
+  }
 }
 
-.containers .card .peluche:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media (max-width: 480px) {
+  #containerCard {
+    margin: 20px;
+  }
+  #containerCard .info {
+    margin: 10px;
+  }
+  #containerCard .text-center {
+    font-weight: bold;
+  }
+  #containerCard .infoPanier {
+    background-color: #eec6f1;
+    color: brown;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 11px #555;
+            box-shadow: 1px 1px 11px #555;
+  }
+  th {
+    color: black;
+    font-size: 0.8em;
+  }
+  td {
+    font-size: 0.7em;
+  }
+  #btnAddRemove {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+  }
+  .btnCartEmpty {
+    margin-left: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .fillTheForm {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .btnValidateForm {
+    margin: 30px;
+  }
+  #formulaire {
+    background-color: #eec6f1;
+  }
 }
 
-.containers .card .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media (min-width: 481px) and (max-width: 768px) {
+  main {
+    overflow: hidden;
+  }
+  #containerCard {
+    overflow: hidden;
+    margin: 20px;
+  }
+  #containerCard .info {
+    margin: 10px;
+  }
+  #containerCard .text-center {
+    font-weight: bold;
+  }
+  #containerCard .infoPanier {
+    background-color: #eec6f1;
+    color: brown;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 11px #555;
+            box-shadow: 1px 1px 11px #555;
+  }
+  th {
+    color: black;
+  }
+  #btnAddRemove {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px;
+  }
+  .btnCartEmpty {
+    margin-left: 10px;
+  }
+  label {
+    font-weight: bold;
+  }
+  .fillTheForm {
+    margin: 20px;
+    font-size: 20px;
+  }
+  .btnValidateForm {
+    margin: 30px;
+  }
+  #formulaire {
+    background-color: #eec6f1;
+  }
 }
 
-.containers .card .descriptionPeluche {
-  padding-top: 20px;
-  font-family: 'lobster', cursive;
-  color: black;
+@media (min-width: 1400px) {
+  .orderContent {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    display: grid;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin: 0 300px 0 300px;
+    background-color: #eec6f1;
+    border-radius: 20px;
+  }
+  .orderContent #orderID {
+    padding-top: 10px;
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent .total {
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent .order {
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent #goBack {
+    margin-bottom: 20px;
+  }
+  .recap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
+    margin: 0 0 45px 0;
+  }
+  .orderStyle {
+    background-color: #e8e8e8;
+    padding-bottom: 30px;
+  }
 }
 
-.containers .card h2 {
-  left: 180px;
-  font-family: 'labster', cursive;
-  font-size: 2em;
-  color: brown;
+@media (max-width: 480px) {
+  .orderContent {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: grid;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin: 5px;
+    background-color: #eec6f1;
+    border-radius: 20px;
+  }
+  .orderContent #orderID {
+    padding-top: 10px;
+    font-weight: bold;
+    color: brown;
+    font-size: 0.8em;
+  }
+  .orderContent .total {
+    font-weight: bold;
+    color: brown;
+    font-size: 0.8em;
+  }
+  .orderContent .order {
+    font-weight: bold;
+    color: brown;
+    font-size: 0.8em;
+  }
+  .orderContent #goBack {
+    margin: 10px;
+  }
+  .recap {
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 1.4em;
+  }
+  .orderStyle {
+    background-color: #e8e8e8;
+    padding-bottom: 30px;
+  }
 }
 
-.containers .card .link {
-  position: absolute;
-  width: 93.6%;
-  font-weight: bold;
-  opacity: 0;
-  cursor: pointer;
-  text-align: center;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.containers .card .link:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.containers .card a {
-  font-size: 1.3em;
-  position: absolute;
-  bottom: 10px;
-  border-style: dashed solid;
-  padding: 5px;
-  color: brown;
-  left: 130px;
-  -webkit-transform: 400ms;
-          transform: 400ms;
-}
-
-.containers .card a:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: #f3e9f1;
-  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-}
-
-.containers .card .prix {
-  position: absolute;
-  bottom: 60px;
-  left: 179px;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-.containers .card p {
-  font-family: 'labster', cursive;
-  color: azure;
-}
-
-.containers .card .duration-200 {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.containers .card .transition {
-  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-}
-
-.Containers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.Containers .card {
-  background-color: #eec6f1;
-  -webkit-box-shadow: 1px 1px 15px #555;
-          box-shadow: 1px 1px 15px #555;
-  border-radius: 30px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 445px;
-  text-align: center;
-  overflow: hidden;
-  position: relative;
-  height: 450px;
-}
-
-.Containers .card .peluches {
-  width: 425px;
-  border-radius: 20px;
-  height: 210px;
-  -webkit-box-shadow: 1px 1px 15px #555;
-          box-shadow: 1px 1px 15px #555;
-  margin-top: 10px;
-  -webkit-transform: 400ms;
-          transform: 400ms;
-}
-
-.Containers .card .peluches:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.Containers .card .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Containers .card .customPeluche {
-  font-family: 'lobster', cursive;
-  color: black;
-  position: relative;
-}
-
-.Containers .card h2 {
-  font-family: 'labster', cursive;
-  font-size: 2em;
-  color: brown;
-}
-
-.Containers .card .link {
-  position: absolute;
-  width: 93.6%;
-  font-weight: bold;
-  opacity: 0;
-  cursor: pointer;
-  text-align: center;
-  -webkit-transition: -webkit-transform 400ms;
-  transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-  transition: transform 400ms, -webkit-transform 400ms;
-}
-
-.Containers .card .link:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: #FFFFFF;
-  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.Containers .card a {
-  font-size: 1.3em;
-  position: absolute;
-  bottom: 10px;
-  border-style: dashed solid;
-  padding: 5px;
-  color: brown;
-  left: 130px;
-  -webkit-transform: 400ms;
-          transform: 400ms;
-}
-
-.Containers .card a:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background-color: #f3e9f1;
-  -webkit-box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-          box-shadow: 7px 3px 10px rgba(0, 0, 0, 0.5);
-  text-decoration: none;
-}
-
-.Containers .card .prix {
-  position: relative;
-  margin-top: -10px;
-  font-size: 1.6em;
-  font-weight: bold;
-}
-
-.Containers .card .color-list {
-  position: absolute;
-  right: 90px;
-  bottom: 60px;
-  font-weight: bold;
-}
-
-.Containers .card .color {
-  background-color: #f3e9f1;
-  font-weight: bold;
-  color: brown;
-}
-
-.Containers .card option {
-  font-weight: bold;
-  color: brown;
-}
-
-.Containers .card p {
-  font-family: 'labster', cursive;
-  color: azure;
-}
-
-.Containers .card .duration-200 {
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
-}
-
-.Containers .card .transition {
-  -webkit-transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, -webkit-box-shadow, -webkit-transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, -webkit-box-shadow, -webkit-transform;
-}
-
-#containerCard {
-  margin: 20px;
-}
-
-#containerCard .info {
-  margin: 10px;
-}
-
-#containerCard .text-center {
-  font-weight: bold;
-}
-
-#containerCard .infoPanier {
-  background-color: #eec6f1;
-  color: brown;
-  font-weight: bold;
-  border-radius: 10px;
-  -webkit-box-shadow: 1px 1px 11px #555;
-          box-shadow: 1px 1px 11px #555;
-}
-
-th {
-  color: black;
-}
-
-#btnAddRemove {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px;
-}
-
-.btnCartEmpty {
-  margin-left: 10px;
-}
-
-label {
-  font-weight: bold;
-}
-
-.fillTheForm {
-  margin: 20px;
-  font-size: 20px;
-}
-
-.btnValidateForm {
-  margin: 30px;
-}
-
-#formulaire {
-  background-color: #eec6f1;
-}
-
-.orderContent {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 30px;
-  display: grid;
-  -webkit-box-shadow: 1px 1px 15px #555;
-          box-shadow: 1px 1px 15px #555;
-  margin: 0 300px 0 300px;
-  background-color: #eec6f1;
-  border-radius: 20px;
-}
-
-.orderContent #orderID {
-  padding-top: 10px;
-  font-weight: bold;
-  color: brown;
-}
-
-.orderContent .total {
-  font-weight: bold;
-  color: brown;
-}
-
-.orderContent .order {
-  font-weight: bold;
-  color: brown;
-}
-
-.orderContent #goBack {
-  margin-bottom: 20px;
-}
-
-.recap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bold;
-  margin: 0 0 45px 0;
-}
-
-.orderStyle {
-  background-color: #e8e8e8;
-  padding-bottom: 30px;
+@media (min-width: 481px) and (max-width: 768px) {
+  .orderContent {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    display: grid;
+    -webkit-box-shadow: 1px 1px 15px #555;
+            box-shadow: 1px 1px 15px #555;
+    margin: 20px;
+    background-color: #eec6f1;
+    border-radius: 20px;
+  }
+  .orderContent #orderID {
+    padding-top: 10px;
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent .total {
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent .order {
+    font-weight: bold;
+    color: brown;
+  }
+  .orderContent #goBack {
+    margin-bottom: 20px;
+  }
+  .recap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-weight: bold;
+    margin: 0 0 45px 0;
+    padding-top: 10px;
+  }
+  .orderStyle {
+    background-color: #e8e8e8;
+    padding-bottom: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -20,7 +20,7 @@ class CartObject {
     }
   }
 
-  addToCart(teddy) {// la boucle for of permet de crée un tableau 
+  addToCart(teddy) {// la boucle for of permet de créer un tableau 
     for (let cartItem of this.cartContain) {
       if (cartItem.id === teddy.id && cartItem.color === teddy.color) {// comparaison strict entre les deux valeurs 
         cartItem.quantity++;
@@ -109,10 +109,19 @@ class CartObject {
 
   cartItems() {
     let getBody = document.querySelector('#custom-peluches');
-    if (this.cartContain < [0]) {
-      let cartEmpty = document.querySelector('.cartEmpty');
-      cartEmpty.style.display = 'unset'; // supprime une variable de la mémoire
+    console.log(this.cartContain);
+    if (this.cartContain.length  == 0) {
+      let cartEmpty = document.querySelector('#custom-peluches');
+      this.createTr = document.createElement('tr');
+      this.createTd = document.createElement('td');
+      this.createTd.setAttribute('colspan', "5" );
+      cartEmpty.appendChild(this.createTr);
+      this.createTr.appendChild(this.createTd);
+      this.createTd.textContent = 'Vos panier est vide !!!';
+      let formulaire = document.getElementById('formulaire');
+      formulaire.style.display = 'none';
     } else {
+      /*formulaire.style.display = 'block';*/
       for (let cartItem of this.cartContain) {
         this.createTr = document.createElement('tr');
         this.createTr.setAttribute('class', 'text-center');
@@ -138,7 +147,7 @@ class CartObject {
   checkFormInput() {
     let checkString = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð'-]{3,}/; // une expression regex pour faire correspondre des combinaisons de caractères. 
     let checkEmail = /^[^\s@]+@[^\s@]+$/;// permet d'éviter une erreur double @ 
-    let checkAddress = /^[a-zA-Z0-9-áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s-]{3,}/;
+    let checkAddress = /^[a-zA-Z0-9áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ._\s-]{3,}/;
     let formLastName = document.getElementById("formLastName").value;
     let formFirstName = document.getElementById("formFirstName").value;
     let formAddress = document.getElementById("formAddress").value;
@@ -205,6 +214,7 @@ class CartObject {
             products.push(product.id);
           }
         }
+        
         let productsContact = {
           contact,
           products

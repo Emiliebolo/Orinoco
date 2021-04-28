@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@media (min-width: 1400px){
 
 body{
     margin: auto;
@@ -10,4 +11,32 @@ body{
     height: 350px;
     display: block;  
     margin: auto;
+}
+
+}
+@media (max-width: 480px){
+    body{
+        margin: auto;
+        padding: 0;
+        background: #e8e8e8;
+    }
+    .ourson{
+       
+        height: 210px;
+        display: block;  
+        margin-top: 20px;
+}
+
+}
+@media (min-width: 481px) and (max-width: 768px){
+    body{
+        margin: auto;
+        padding: 0;
+        background: #e8e8e8;
+    }
+    .ourson{
+        height: 350px;
+        display: block;  
+        margin: auto;
+    }
 }

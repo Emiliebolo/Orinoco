@@ -101,7 +101,6 @@ this.insertPrice();
 this.insertColor();
 this.insertBtnAddCart();
 }
-
 }
     /* let customPeluche = document.createElement('article');
 let customName = document.createElement('h2');

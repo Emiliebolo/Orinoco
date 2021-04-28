@@ -1,3 +1,49 @@
+@media (max-width: 480px){
+    
+    .logo{
+    
+        width: 120px;
+    }
+    .navbar {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        background-color: #f3e9f1;
+    }
+    
+    .panier{
+        color: rgb(66, 8, 42);
+        font-weight: bold;
+        font-size: 0.7em;
+        text-decoration: none;
+     
+      .panier:hover {
+        color: ivory;
+        text-decoration: none;
+    }
+    
+    }
+    #titleText {
+        width: 100%;
+        text-shadow: 3px 3px rgb(66, 8, 42);
+        text-align: center;
+        font-family: 'lobster', cursive;
+        font-size: 2.5em;
+        color: brown;
+    
+    }
+}
+
+@media (min-width: 1400px){
+
+
 .logo{
     
     width: 150px;
@@ -39,4 +85,50 @@
     font-size: 3.5em;
     color: brown;
 
+}
+
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .logo{
+    
+        width: 150px;
+    }
+    .navbar {
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: .5rem 1rem;
+        background-color: #f3e9f1;
+    }
+    
+    .panier{
+        color: rgb(66, 8, 42);
+        font-weight: bold;
+        font-size: 0.9em;
+        text-decoration: none;
+     
+      .panier:hover {
+        color: ivory;
+        text-decoration: none;
+    }
+    
+    }
+    #titleText {
+        width: 100%;
+        position: absolute;
+        top: 225px;
+        left: 0px;
+        text-shadow: 3px 3px rgb(66, 8, 42);
+        text-align: center;
+        font-family: 'lobster', cursive;
+        font-size: 3.5em;
+        color: brown;
+    
+    }
 }

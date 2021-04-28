@@ -1,3 +1,4 @@
+@media (min-width: 1400px){
 .orderContent{
     display: grid;
     justify-content: center;
@@ -34,4 +35,86 @@
 .orderStyle{
     background-color: #e8e8e8;
     padding-bottom: 30px;
+}
+
+}
+@media (max-width: 480px){
+    .orderContent{
+        display: grid;
+        justify-content: center;
+        display: grid;
+        box-shadow: 1px 1px 15px #555;
+        margin: 5px;
+        background-color: rgb(238, 198, 241);
+        border-radius: 20px;
+        
+     #orderID{
+         padding-top: 10px;
+         font-weight: bold;
+         color: brown;
+         font-size: 0.8em;
+     }
+     .total{
+         font-weight: bold;
+         color:brown;
+         font-size: 0.8em;
+     }
+     .order{
+         font-weight: bold;
+         color: brown;
+         font-size: 0.8em;
+     }
+     #goBack{
+         margin: 10px;
+     }
+       }
+    .recap{
+        margin-left: 5px;
+        font-weight: bold;
+        font-size: 1.4em;
+    }
+    .orderStyle{
+        background-color: #e8e8e8;
+        padding-bottom: 30px;
+    }
+}
+@media (min-width: 481px) and (max-width: 768px){
+    .orderContent{
+        display: grid;
+        justify-content: center;
+        padding-top: 30px;
+        display: grid;
+        box-shadow: 1px 1px 15px #555;
+        margin: 20px;
+        background-color: rgb(238, 198, 241);
+        border-radius: 20px;
+        
+     #orderID{
+         padding-top: 10px;
+         font-weight: bold;
+         color: brown;
+     }
+     .total{
+         font-weight: bold;
+         color:brown;
+     }
+     .order{
+         font-weight: bold;
+         color: brown;
+     }
+     #goBack{
+         margin-bottom: 20px;
+     }
+       }
+    .recap{
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        margin: 0 0 45px 0;
+        padding-top: 10px;
+    }
+    .orderStyle{
+        background-color: #e8e8e8;
+        padding-bottom: 30px;
+    }
 }

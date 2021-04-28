@@ -23,7 +23,6 @@
 
         <link rel="apple-touch-icon" href="assets/img/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
-		/>
         <title>Orinoco - Votre e-commerce spécialisé - panier !</title>
         <meta name="description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
         <link rel="stylesheet" type="text/css" href="../../Front-end/assets/sass/main.css">
@@ -50,11 +49,10 @@
         
               <main>
                 <!-- Principal conteneur pour importation produits dans le panier -->
-                <section id="containerCard">
-                  <div class="info">
-                    <h2 class='text-center'>Récapitulatif de votre panier</h2>
-                  </div>
+                <div id="containerCard">
+          
                   <table class="infoPanier table table-dark table-hover table-striped col">
+                    <thead>
                     <tr class="table-dark table table-hover">
                     <th class="title text-center ">Produit</th>
                     <th class="color text-center">Couleur</th>
@@ -62,6 +60,7 @@
                     <th class="quantity text-center ">Quantité</th>
                     <th class="total text-center">Total</th>
                     </tr>
+                    </thead>
                     <tbody id="custom-peluches">
                     </tbody>
                   </table>
@@ -83,7 +82,7 @@
 
                      <div class="form-group col-md-3">
                       <div class='col'>
-                        <label for="formLastName">last Name</label>
+                        <label for="formLastName">Nom</label>
                         <input type="text" class="form-control" id="formLastName" name="formLastName" minlength="3" required>
                         <span class="error" id="errorLastName"></span>
                       </div>
@@ -91,50 +90,49 @@
 
                     <div class="form-group col-md-3">
                       <div class='col'>
-                        <label for="formFirstName">first Name</label>
+                        <label for="formFirstName">Prénom</label>
                         <input type="text" class="form-control" id="formFirstName" name="formFirstName" minlength="3" required>
                         <span class="error" id="errorFirstName"></span>
                       </div>
                     </div>
                   
                     <div class="form-group col-md-3">
-                      <label for="formAddress">Adress</label>
-                      <input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="12 avenue des coquelicots" minlength="3" required>
+                      <div class='col'>
+                      <label for="formAddress">Adresse</label>
+                      <input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="12 avenue ...." minlength="3" required>
                       <span class="error" id="errorAddress"></span>
+                      </div>
                     </div>
 
                     <div class="form-group col-md-3">
                       <div class='col'>
-                        <label for="formCity">city</label>
+                        <label for="formCity">ville</label>
                         <input type="text" class="form-control" id="formCity" name="formCity" minlength="3" required>
                         <span class="error" id="errorCity"></span>
                       </div>
                     </div>
 
                     <div class="form-group col-md-3">
-                      <div class="col">
+                      <div class='col'>
                         <label for="formEmail">Email</label>
                         <input type="email" class="form-control" id="formEmail" name="formEmail" required>
                         <span class="error" id="errorEmail"></span>
                       </div>
                     </div>
+                    </div>
 
-                    </div>
                     <div class=" text-center btnValidateForm">
-                      <button href= 'confirmation.html'type="submit" class="btn btn-light btn-outline-dark btnForm ">Valider mon panier</button>
-                    </div>
+                      <button formaction= 'confirmation.html' type="submit" class="btn btn-light btn-outline-dark btnForm ">Valider mon panier</button>
                     </div>
                   </form>
                 </div>
-                </section>
-               
               </main>
 
               <footer class="text-center text-white" style="background-color: #f1f1f1;">
                 <!-- Grid container -->
                 <div class="container pt-4">
                   <!-- Section: Social media -->
-                  <section class="mb-4">
+                  <div class="mb-4">
                     <!-- Facebook -->
                     <a
                       class="btn btn-link btn-floating btn-lg text-dark m-1"
@@ -187,7 +185,7 @@
                       data-mdb-ripple-color="dark"
                       ><i class="fab fa-github"></i
                     ></a>
-                  </section>
+                      </div>
                   <!-- Section: Social media -->
                 </div>
                 <!-- Grid container -->

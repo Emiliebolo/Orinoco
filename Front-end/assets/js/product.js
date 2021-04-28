@@ -11,10 +11,12 @@ const url = `http://localhost:3000/api/teddies/` + id;
  fetch(url)
 .then(function(response) {
     if (response.status !== 200) {
-      console.log('Probleme. Status Code: ' +
+      console.log('Status Code: ' +
         response.status);
       return;
     }
+    console.log(url);
+
     response.json().then(function(custom) {
         const displayTeddy = new Teddy(custom);
         displayTeddy.displayOneTeddy();

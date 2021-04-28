@@ -36,8 +36,8 @@ class Products {
 	
 				  //Contenu des balises
 				  productDescript.innerHTML = productList[i].description;
-				  productName.innerHTML = productList[i].name;// affichage du nom de la peluche non effectué
-				  productPrice.innerHTML = productList[i].price / 100 + ",00€";// problème d'affichage NAN
+				  productName.innerHTML = productList[i].name;
+				  productPrice.innerHTML = productList[i].price / 100 + ",00€";
 				  productLink.innerHTML = 'Acheter le produit';
 	
 				//Ajout un élément HTML enfant à la fin d'un élement parent
