@@ -121,7 +121,7 @@ class CartObject {
       let formulaire = document.getElementById('formulaire');
       formulaire.style.display = 'none';
     } else {
-      /*formulaire.style.display = 'block';*/
+      formulaire.style.display = 'block';
       for (let cartItem of this.cartContain) {
         this.createTr = document.createElement('tr');
         this.createTr.setAttribute('class', 'text-center');
