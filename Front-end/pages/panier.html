@@ -1,209 +1,188 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <meta name="theme-color" content="#000">
-        <meta name="robots" content="index, follow">
 
-        <meta property="og:url" content="https://github.com/Emiliebolo/Orinoco.git/front-end/index.html" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches faites maison!" />
-        <meta property="og:description" content="Bienvenue chez Orinoco ! Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
-        <meta property="og:image" content="https://github.com/Emiliebolo/Orinoco.git/assets/img/favicon.jpg" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000">
+  <meta name="robots" content="index, follow">
 
-        <meta name="twitter:card" content="website" />
-        <meta name="twitter:site" content="@Orinoco" />
-        <meta name="twitter:creator" content="@Orinoco" />
-        <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches !" />
-        <meta name="twitter:description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
-        <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta property="og:url" content="https://github.com/Emiliebolo/Orinoco.git/front-end/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches faites maison!" />
+  <meta property="og:description"
+    content="Bienvenue chez Orinoco ! Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
+  <meta property="og:image" content="https://github.com/Emiliebolo/Orinoco.git/assets/img/favicon.jpg" />
 
-        <link rel="apple-touch-icon" href="assets/img/favicon.ico">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
-        <title>Orinoco - Votre e-commerce spécialisé - panier !</title>
-        <meta name="description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
-        <link rel="stylesheet" type="text/css" href="../../Front-end/assets/sass/main.css">
-        
-    </head>
+  <meta name="twitter:card" content="website" />
+  <meta name="twitter:site" content="@Orinoco" />
+  <meta name="twitter:creator" content="@Orinoco" />
+  <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches !" />
+  <meta name="twitter:description"
+    content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
+  <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <body >
-      <header>
-        <nav class="navbar">
-          <a class="text-light h2 ml-md-5 text-decoration-none" href="../index.html" title="Page d'accueil">
-            <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
-          </a>
-          <p class="text-light h3 mr-md-5">
-            <a class="panier text-decoration-none text-secondary" href="../index.html">
-            <i class="fas fa-shopping-cart"></i>Accueil</a>
-          </p>
-      </nav>
-    </header>
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <title>Orinoco - Votre e-commerce spécialisé - panier !</title>
+  <meta name="description"
+    content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
+  <link rel="stylesheet" type="text/css" href="../../Front-end/assets/sass/main.css">
 
-             <div>
-                <img src="../assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
-                <h1 id="titleText">Détail de votre commande </h1>
-              </div>
-        
-              <main>
-                <!-- Principal conteneur pour importation produits dans le panier -->
-                <div id="containerCard">
-          
-                  <table class="infoPanier table table-dark table-hover table-striped col">
-                    <thead>
-                    <tr class="table-dark table table-hover">
-                    <th class="title text-center ">Produit</th>
-                    <th class="color text-center">Couleur</th>
-                    <th class="price text-center">Prix</th>
-                    <th class="quantity text-center ">Quantité</th>
-                    <th class="total text-center">Total</th>
-                    </tr>
-                    </thead>
-                    <tbody id="custom-peluches">
-                    </tbody>
-                  </table>
-                   
-                  
+</head>
 
-                  <div id="btnAddRemove">
-                    <a href="../index.html" class="btn btn-light btn-outline-dark btnCart col-md-2 col">
-                      <i></i> Continuer mes achats
-                    </a>
-                    <button type="button" class="btn btn-light btn-outline-dark btnCart btnCartEmpty col-md-2 col">Supprimer mon panier</button>
-                  </div>
-                </div>
-            
-                <div id="formulaire" class="shadow card form">
-                  <p class='text-center fillTheForm'>Remplissez le formulaire</p>
-                  <form name="cartCheckout" method="post" action="#">
-                    <div class='form-row'>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="text-light h2 ml-md-5 text-decoration-none" href="../index.html" title="Page d'accueil">
+        <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png"
+          alt="Le logo d'Orinoco">
+      </a>
+      <p class="text-light h3 mr-md-5">
+        <a class="panier text-decoration-none text-secondary" href="../index.html">
+          <i class="fas fa-shopping-cart"></i>Accueil</a>
+      </p>
+    </nav>
+  </header>
 
-                     <div class="form-group col-md-3">
-                      <div class='col'>
-                        <label for="formLastName">Nom</label>
-                        <input type="text" class="form-control" id="formLastName" name="formLastName" minlength="3" required>
-                        <span class="error" id="errorLastName"></span>
-                      </div>
-                    </div>
+  <div>
+    <img src="../assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
+    <h1 id="titleText">Détail de votre commande </h1>
+  </div>
 
-                    <div class="form-group col-md-3">
-                      <div class='col'>
-                        <label for="formFirstName">Prénom</label>
-                        <input type="text" class="form-control" id="formFirstName" name="formFirstName" minlength="3" required>
-                        <span class="error" id="errorFirstName"></span>
-                      </div>
-                    </div>
-                  
-                    <div class="form-group col-md-3">
-                      <div class='col'>
-                      <label for="formAddress">Adresse</label>
-                      <input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="12 avenue ...." minlength="3" required>
-                      <span class="error" id="errorAddress"></span>
-                      </div>
-                    </div>
+  <main>
+    <!-- Principal conteneur pour importation produits dans le panier -->
+    <div id="containerCard">
 
-                    <div class="form-group col-md-3">
-                      <div class='col'>
-                        <label for="formCity">ville</label>
-                        <input type="text" class="form-control" id="formCity" name="formCity" minlength="3" required>
-                        <span class="error" id="errorCity"></span>
-                      </div>
-                    </div>
+      <table class="infoPanier table table-dark table-hover table-striped col">
+        <thead>
+          <tr class="table-dark table table-hover">
+            <th class="title text-center ">Produit</th>
+            <th class="color text-center">Couleur</th>
+            <th class="price text-center">Prix</th>
+            <th class="quantity text-center ">Quantité</th>
+            <th class="total text-center">Total</th>
+          </tr>
+        </thead>
+        <tbody id="custom-peluches">
+        </tbody>
+      </table>
 
-                    <div class="form-group col-md-3">
-                      <div class='col'>
-                        <label for="formEmail">Email</label>
-                        <input type="email" class="form-control" id="formEmail" name="formEmail" required>
-                        <span class="error" id="errorEmail"></span>
-                      </div>
-                    </div>
-                    </div>
 
-                    <div class=" text-center btnValidateForm">
-                      <button formaction= 'confirmation.html' type="submit" class="btn btn-light btn-outline-dark btnForm ">Valider mon panier</button>
-                    </div>
-                  </form>
-                </div>
-              </main>
 
-              <footer class="text-center text-white" style="background-color: #f1f1f1;">
-                <!-- Grid container -->
-                <div class="container pt-4">
-                  <!-- Section: Social media -->
-                  <div class="mb-4">
-                    <!-- Facebook -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-              
-                    <!-- Twitter -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-              
-                    <!-- Google -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-google"></i
-                    ></a>
-              
-                    <!-- Instagram -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-              
-                    <!-- Linkedin -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <!-- Github -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                      </div>
-                  <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-              
-                <!-- Copyright -->
-                <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                  © 2021 Copyright:
-                  <a class="text-dark" href="https://github.com/Emiliebolo/Orinoco.git">Projet-Orinoco</a>
-                </div>
-                <!-- Copyright -->
-              </footer>
-          
-          
-              <!-- Footer Elements -->
-          
-              <script src="../assets/js/CartObject.js"></script>
-              <script src="../assets/js/cart.js"></script>
-              
-              
-    </body>
+      <div id="btnAddRemove">
+        <a href="../index.html" class="btn btn-light btn-outline-dark btnCart col-md-2 col">
+          <i></i> Continuer mes achats
+        </a>
+        <button type="button" class="btn btn-light btn-outline-dark btnCart btnCartEmpty col-md-2 col">Supprimer mon
+          panier</button>
+      </div>
+    </div>
+
+    <div id="formulaire" class="shadow card form">
+      <p class='text-center fillTheForm'>Remplissez le formulaire</p>
+      <form name="cartCheckout" method="post" action="#">
+        <div class='form-row'>
+
+          <div class="form-group col-md-3">
+            <div class='col'>
+              <label for="formLastName">Nom</label>
+              <input type="text" class="form-control" id="formLastName" name="formLastName" minlength="3" required>
+              <span class="error" id="errorLastName"></span>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <div class='col'>
+              <label for="formFirstName">Prénom</label>
+              <input type="text" class="form-control" id="formFirstName" name="formFirstName" minlength="3" required>
+              <span class="error" id="errorFirstName"></span>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <div class='col'>
+              <label for="formAddress">Adresse</label>
+              <input type="text" class="form-control" id="formAddress" name="formAddress" placeholder="12 avenue ...."
+                minlength="3" required>
+              <span class="error" id="errorAddress"></span>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <div class='col'>
+              <label for="formCity">ville</label>
+              <input type="text" class="form-control" id="formCity" name="formCity" minlength="3" required>
+              <span class="error" id="errorCity"></span>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+            <div class='col'>
+              <label for="formEmail">Email</label>
+              <input type="email" class="form-control" id="formEmail" name="formEmail" required>
+              <span class="error" id="errorEmail"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class=" text-center btnValidateForm">
+          <button formaction='confirmation.html' type="submit" class="btn btn-light btn-outline-dark btnForm ">Valider
+            mon panier</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="text-center text-white" style="background-color: #f1f1f1;">
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <div class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+          data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+      </div>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="https://github.com/Emiliebolo/Orinoco.git">Projet-Orinoco</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+
+  <!-- Footer Elements -->
+
+  <script src="../assets/js/CartObject.js"></script>
+  <script src="../assets/js/cart.js"></script>
+
+
+</body>
+
 </html>

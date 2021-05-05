@@ -1,138 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-        <meta name="theme-color" content="#000">
-        <meta name="robots" content="index, follow">
 
-        <meta property="og:url" content="https://github.com/Emiliebolo/Orinoco.git/front-end/index.html" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches faites maison!" />
-        <meta property="og:description" content="Bienvenue chez Orinoco ! Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
-        <meta property="og:image" content="https://github.com/Emiliebolo/Orinoco.git/assets/img/favicon.jpg" />
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000">
+  <meta name="robots" content="index, follow">
 
-        <meta name="twitter:card" content="website" />
-        <meta name="twitter:site" content="@Orinoco" />
-        <meta name="twitter:creator" content="@Orinoco" />
-        <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches !" />
-        <meta name="twitter:description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
-        <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg"/>
+  <meta property="og:url" content="https://github.com/Emiliebolo/Orinoco.git/front-end/index.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches faites maison!" />
+  <meta property="og:description"
+    content="Bienvenue chez Orinoco ! Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
+  <meta property="og:image" content="https://github.com/Emiliebolo/Orinoco.git/assets/img/favicon.jpg" />
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-              integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+  <meta name="twitter:card" content="website" />
+  <meta name="twitter:site" content="@Orinoco" />
+  <meta name="twitter:creator" content="@Orinoco" />
+  <meta name="twitter:title" content="Orinoco - Votre e-commerce spécialisé dans les peluches !" />
+  <meta name="twitter:description"
+    content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!" />
+  <meta name="twitter:image" content="https://github.com/Emiliebolo/Orinoco.git/front-end/assets/img/favicon.jpg" />
 
-        <link rel="apple-touch-icon" href="assets/img/favicon.ico">
-        <title>Orinoco - Votre e-commerce spécialisé !</title>
-        <meta name="description" content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
-        <link rel="stylesheet" type="text/css" href="assets/sass/main.css">
-        
-        
-    </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
 
-    <body >
-        
-        <!-- Principal conteneur -->
-        <main >
-          <header>
-            <nav class="navbar">
-            <p>
-              <a class="text-light h2 ml-md-5 text-decoration-none" href="index.html" title="Page d'accueil">
-                <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="Le logo d'Orinoco">
-              </a>
-            <p>
-              <p class="text-light h5 mr-md-5">
-                <a class="panier text-decoration-none text-secondary" href="pages/panier.html">
-                <i class="fas fa-shopping-cart"></i> Mon panier</a>
-              </p>
-          </nav>
-        </header>
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+  <title>Orinoco - Votre e-commerce spécialisé !</title>
+  <meta name="description"
+    content="Bienvenue chez Orinoco !  Le site e-commerce se démarquant des grands groupes en créant des applications thématiques!">
+  <link rel="stylesheet" type="text/css" href="assets/sass/main.css">
 
-             <div>
-                <img src="../Front-end/assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
-                <h1 id="titleText" class="titleText">Notre liste de peluche faite à la main</h1>
-              </div>
-          
-              <div id="itemContainer" class="containers transition duration-200 transform hover:scale-102">
-             <!-- Js scripts -->
-              </div>
 
-              <footer class="text-center text-white" style="background-color: #f1f1f1;">
-                <!-- Grid container -->
-                <div class="container pt-4">
-                  <!-- Section: Social media -->
-                  <div class="mb-4">
-                    <!-- Facebook -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-facebook-f"></i
-                    ></a>
-              
-                    <!-- Twitter -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-twitter"></i
-                    ></a>
-              
-                    <!-- Google -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-google"></i
-                    ></a>
-              
-                    <!-- Instagram -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-instagram"></i
-                    ></a>
-              
-                    <!-- Linkedin -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                    <!-- Github -->
-                    <a
-                      class="btn btn-link btn-floating btn-lg text-dark m-1"
-                      href="#!"
-                      role="button"
-                      data-mdb-ripple-color="dark"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                      </div>
-                  <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-              
-                <!-- Copyright -->
-                <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                  © 2021 Copyright:
-                  <a class="text-dark" href="https://github.com/Emiliebolo/Orinoco.git">Projet-Orinoco</a>
-                </div>
-                <!-- Copyright -->
-              </footer>
-              
-              <script src="assets/js/request-Api.js"></script>
-              <script src="assets/js/Products.js"></script>
-              <script src="assets/js/index.js"></script>
-              
-          
-            </main>
-    </body>
+</head>
+
+<body>
+
+  <!-- Principal conteneur -->
+  <main>
+    <header>
+      <nav class="navbar">
+        <p>
+          <a class="text-light h2 ml-md-5 text-decoration-none" href="index.html" title="Page d'accueil">
+            <img class="logo" src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png"
+              alt="Le logo d'Orinoco">
+          </a>
+        <p>
+        <p class="text-light h5 mr-md-5">
+          <a class="panier text-decoration-none text-secondary" href="pages/panier.html">
+            <i class="fas fa-shopping-cart"></i> Mon panier</a>
+        </p>
+      </nav>
+    </header>
+
+    <div>
+      <img src="../Front-end/assets/img/index.jpg" class="ourson" alt="Ourson en peluche">
+      <h1 id="titleText" class="titleText">Notre liste de peluche faite à la main</h1>
+    </div>
+
+    <div id="itemContainer" class="containers transition duration-200 transform hover:scale-102">
+      <!-- Js scripts -->
+    </div>
+
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <div class="mb-4">
+          <!-- Facebook -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+          <!-- Google -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+          <!-- Instagram -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+          <!-- Github -->
+          <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+            data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+        </div>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-dark" href="https://github.com/Emiliebolo/Orinoco.git">Projet-Orinoco</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="assets/js/request-Api.js"></script>
+    <script src="assets/js/Products.js"></script>
+    <script src="assets/js/index.js"></script>
+
+
+  </main>
+</body>
+
 </html>

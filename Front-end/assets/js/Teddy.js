@@ -1,5 +1,5 @@
 class Teddy {
-  constructor(custom){
+  constructor(custom) {
     this.i = 0;
     this.name = custom.name;
     this.img = custom.imageUrl;
@@ -9,98 +9,76 @@ class Teddy {
     this.colors = custom.colors;
     this.customProduct = document.getElementById('customProduct');
     this.customPeluche = document.createElement('div');
-    } 
-    // attribution d'une class et ajout de l'image
-   
- insertImg(){
-this.customPeluche.setAttribute('class', 'card ');
-this.customProduct.appendChild(this.customPeluche);
+  }
+  //ajouter fonction comportant l'ensemble du code pour l'affichage de l'image la description le nom la couleur et le prix 
+  displayOneTeddy() {
+    this.customPeluche.setAttribute('class', 'card ');
+    this.customProduct.appendChild(this.customPeluche);
 
-const customImg = document.createElement('img');
-customImg.setAttribute('src', this.img);
-customImg.setAttribute('alt', this.name);
-customImg.setAttribute('class', 'peluches');
+    const customImg = document.createElement('img');
+    customImg.setAttribute('src', this.img);
+    customImg.setAttribute('alt', this.name);
+    customImg.setAttribute('class', 'peluches');
+    this.customPeluche.appendChild(customImg);
 
-this.customPeluche.appendChild(customImg);
-}
+    const customName = document.createElement('h2');
+    customName.innerHTML = this.name;
+    this.customPeluche.appendChild(customName);
 
-insertName() {
-const customName = document.createElement('h2');
-customName.innerHTML = this.name;
+    const customDescription = document.createElement('p');
+    customDescription.setAttribute('class', 'customPeluche');
+    customDescription.innerHTML = this.description;
+    this.customPeluche.appendChild(customDescription);
 
-this.customPeluche.appendChild(customName);
-}
+    const customPrice = document.createElement('p');
+    customPrice.setAttribute('class', 'prix');
+    customPrice.innerHTML = this.price;
+    this.customPeluche.appendChild(customPrice);
 
-insertDescription () {
-const customDescription = document.createElement('p');
-customDescription.setAttribute('class', 'customPeluche');
-customDescription.innerHTML = this.description;
+    const customLabel = document.createElement('label');
+    customLabel.setAttribute('class', 'color-list');
+    customLabel.textContent = ' Nos Couleurs disponibles: ';
 
-this.customPeluche.appendChild(customDescription);
-}
+    this.customPeluche.appendChild(customLabel);
 
-insertPrice () {
-const customPrice = document.createElement('p');
-customPrice.setAttribute('class', 'prix');
-customPrice.innerHTML = this.price;
+    const customSelect = document.createElement('select');
+    customSelect.setAttribute('class', 'selectColor');
 
-this.customPeluche.appendChild(customPrice);
-}
+    customLabel.appendChild(customSelect);
 
-insertColor () {
-const customLabel = document.createElement('label');
-customLabel.setAttribute('class', 'color-list');
-customLabel.textContent = ' Nos Couleurs disponibles: ';
+    for (let i = 0; i < this.colors.length; i++) {
+      const customOption = document.createElement('option');
+      customOption.textContent = this.colors[i];
+      customOption.setAttribute('value', this.colors[i]);
+      customOption.setAttribute('required', '');
+      customSelect.appendChild(customOption);
+    }
 
-this.customPeluche.appendChild(customLabel);
+    const containAddBtn = document.createElement('div');
 
-const customSelect = document.createElement('select');
-customSelect.setAttribute('class', 'selectColor');
+    this.customPeluche.appendChild(containAddBtn);
 
-customLabel.appendChild(customSelect);
+    const btnAddCart = document.createElement('a');
+    btnAddCart.setAttribute('class', 'addToCart');
+    btnAddCart.setAttribute('href', 'panier.html');
 
-for(let i = 0; i < this.colors.length; i++) {
-  const customOption = document.createElement('option');
-  customOption.textContent = this.colors[i];
-  customOption.setAttribute('value', this.colors[i]);
-  customOption.setAttribute('required', '');
-  customSelect.appendChild(customOption);
-}
-}
+    btnAddCart.innerHTML = 'Ajouter au panier';
 
-insertBtnAddCart () {
-const containAddBtn = document.createElement('div');
+    containAddBtn.appendChild(btnAddCart);
 
-this.customPeluche.appendChild(containAddBtn);
+    const cartObject = new CartObject();
+    document.querySelector('.addToCart').addEventListener('click', () => {
+      cartObject.addToCart({
+        'name': this.name,
+        'color': document.querySelector(".selectColor").value,
+        'price': this.price,
+        'id': this.id,
 
-const btnAddCart = document.createElement('a');
-btnAddCart.setAttribute('class', 'addToCart');
-btnAddCart.setAttribute('href', 'panier.html');
+      });
+    });
 
-btnAddCart.innerHTML = 'Ajouter au panier';
+  }
 
-containAddBtn.appendChild(btnAddCart);
-
-const cartObject = new CartObject();
-document.querySelector('.addToCart').addEventListener('click', () => {
-  cartObject.addToCart({
-  'name': this.name,
-  'color': document.querySelector(".selectColor").value,
-  'price': this.price,
-  'id': this.id,
-  
-  });  
-});
-}
-
-displayOneTeddy() {
-this.insertImg();
-this.insertName();
-this.insertDescription();
-this.insertPrice();
-this.insertColor();
-this.insertBtnAddCart();
-}
 }
     /* let customPeluche = document.createElement('article');
 let customName = document.createElement('h2');
@@ -146,25 +124,25 @@ customButton.textContent = 'Ajouter la peluche au panier';
 // Boucle pour faire appel aux differentes options de couleurs dans la partie label, selon la peluche
 let select = document.getElementById('select');
 for (let i=0; i < custom.colors.length; i++){
- let option = document.createElement('option');
- option.setAttribute('id','optionColor');
- select.appendChild('option');
- select.textContent = custom.colors;
+let option = document.createElement('option');
+option.setAttribute('id','optionColor');
+select.appendChild('option');
+select.textContent = custom.colors;
 }
 
- const cart = new CartObject();
- document.querySelector('.addToCart').addEventListener('click', () => {
-   cart.addToCart({
-   'name': this.name,
-   'price': this.price,
-   'id': this.id,
-   'color': document.querySelector(".colorSelect").value,
-   });  
- }); */
+const cart = new CartObject();
+document.querySelector('.addToCart').addEventListener('click', () => {
+cart.addToCart({
+'name': this.name,
+'price': this.price,
+'id': this.id,
+'color': document.querySelector(".colorSelect").value,
+});
+}); */
 
 
 
 
- 
 
-     
+
+

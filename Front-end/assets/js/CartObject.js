@@ -38,7 +38,7 @@ class CartObject {
     this.setItem();// mise à jour avec les nouvelles données
   }
 
-//cartElement: creer un élément td pour le nom la couleur et le prix
+  //cartElement: creer un élément td pour le nom la couleur et le prix
   cartElement(cartItem) {
     const elementTd = document.createElement('td');
     elementTd.textContent = cartItem;
@@ -110,11 +110,11 @@ class CartObject {
   cartItems() {
     let getBody = document.querySelector('#custom-peluches');
     console.log(this.cartContain);
-    if (this.cartContain.length  == 0) {
+    if (this.cartContain.length == 0) {
       let cartEmpty = document.querySelector('#custom-peluches');
       this.createTr = document.createElement('tr');
       this.createTd = document.createElement('td');
-      this.createTd.setAttribute('colspan', "5" );
+      this.createTd.setAttribute('colspan', "5");
       cartEmpty.appendChild(this.createTr);
       this.createTr.appendChild(this.createTd);
       this.createTd.textContent = 'Vos panier est vide !!!';
@@ -126,7 +126,7 @@ class CartObject {
         this.createTr = document.createElement('tr');
         this.createTr.setAttribute('class', 'text-center');
         getBody.appendChild(this.createTr);
-  
+
         this.cartElement(cartItem.name);
         this.cartElement(cartItem.color);
         this.cartElement(cartItem.price);
@@ -192,7 +192,7 @@ class CartObject {
       });
       //localStorage.clear();// localStorage.clear supprimée pour éviter la suppression du local storage contenant les infos de la peluche lors du passage de la confirmation 
     })
-    ();
+      ();
     console.log("http://localhost:3000/api/teddies/order");
   }
 
@@ -214,7 +214,7 @@ class CartObject {
             products.push(product.id);
           }
         }
-        
+
         let productsContact = {
           contact,
           products
@@ -224,5 +224,5 @@ class CartObject {
     })
     console.log(this.cartContain);
   }
- 
+
 }
