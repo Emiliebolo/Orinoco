@@ -7,7 +7,7 @@ class Products {
 		 for (let i = 0; i < productList.length; i++) {
 	
 			// Console.log pour afficher le détail de chaque peluche
-			   console.log (productList[i]); 
+			   
 			 // nouvelle variable itemContainer pour generer par la suite dans la partie id= itemContainer
 			   let itemContainer = document.getElementById ('itemContainer')
 				// Ajout de variable pour la création des éléments 

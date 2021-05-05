@@ -193,7 +193,6 @@ class CartObject {
       //localStorage.clear();// localStorage.clear supprimée pour éviter la suppression du local storage contenant les infos de la peluche lors du passage de la confirmation 
     })
       ();
-    console.log("http://localhost:3000/api/teddies/order");
   }
 
   orderConfirmation() {
@@ -222,7 +221,7 @@ class CartObject {
         this.fetchRequest(productsContact);
       }
     })
-    console.log(this.cartContain);
+   
   }
 
 }
