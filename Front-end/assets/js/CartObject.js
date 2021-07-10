@@ -18,6 +18,7 @@ class CartObject {
     } else {
       this.getItem();
     }
+    console.log(cartContain);
   }
 
   addToCart(teddy) {// la boucle for of permet de créer un tableau 
@@ -27,6 +28,7 @@ class CartObject {
         this.setItem();
         return;
       }
+      console.log(teddy);
     }
     this.cartContain.push({ // ajout des valeurs ' name , price, id ,color ,qtd  dans le tableau
       'name': teddy.name,

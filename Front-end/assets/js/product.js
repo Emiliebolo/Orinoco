@@ -17,7 +17,7 @@ const url = `http://localhost:3000/api/teddies/` + id;/* tester si renvoie bien 
    
 
     response.json().then(function(custom) {
-        const displayTeddy = new Teddy(custom);
+      const displayTeddy = new Teddy(custom);
         displayTeddy.displayOneTeddy();
         console.log(custom);
     });
